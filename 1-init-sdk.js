@@ -5,11 +5,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const sdk = new ThirdwebSDK(
-  new ethers.Wallet(
-    // Your wallet private key. ALWAYS KEEP THIS PRIVATE, DO NOT SHARE IT WITH ANYONE.
-    // Add it to your .env file and do not commit that file to github!
+  new ethers.Wallet(0x9D84a4a4dA6D1039725b5fD70b9516542D4c520a)
     process.env.PRIVATE_KEY,
-    // RPC URL, we'll use our Alchemy API URL from our .env file.
     ethers.getDefaultProvider('https://rinkeby-light.eth.linkpool.io/')
   )
 );
