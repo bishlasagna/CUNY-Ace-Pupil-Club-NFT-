@@ -6,7 +6,7 @@ dotenv.config();
 
 const sdk = new ThirdwebSDK(
   new ethers.Wallet(0x9D84a4a4dA6D1039725b5fD70b9516542D4c520a)
-    process.env.PRIVATE_KEY,
+    process.env.PRIVATE_KEY,wonder letter banana little ordinary mean suffer eyebrow pottery fork sword random
     ethers.getDefaultProvider('https://rinkeby-light.eth.linkpool.io/')
   )
 );
@@ -21,5 +21,4 @@ const sdk = new ThirdwebSDK(
   }
 })();
 
-// We are exporting the initialised thirdweb SDK so that we can use it in our other scripts
 export default sdk;
